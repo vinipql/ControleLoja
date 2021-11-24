@@ -1,0 +1,13 @@
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\ControleLoja.exe.config
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\ControleLoja.exe
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\ControleLoja.pdb
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.csprojAssemblyReference.cache
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.Frm_Login.resources
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.Properties.Resources.resources
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.csproj.GenerateResource.cache
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.csproj.CoreCompileInputs.cache
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.exe
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.pdb
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.SistemaInterno.resources
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\Database1.mdf
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\Database1_log.ldf
