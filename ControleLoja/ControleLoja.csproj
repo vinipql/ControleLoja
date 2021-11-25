@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarUser.Designer.cs">
+      <DependentUpon>CriarUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -77,6 +85,9 @@
       <DependentUpon>SistemaInterno.cs</DependentUpon>
     </Compile>
     <Compile Include="UtilFunctions.cs" />
+    <EmbeddedResource Include="CriarUser.resx">
+      <DependentUpon>CriarUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -19,17 +19,31 @@ namespace ControleLoja
 
             string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Vinicius\Acessos.txt");
 
-            if (!string.IsNullOrEmpty(login) && !string.IsNullOrEmpty(senha))
+            int linesSize = lines.Count();
+            int x = 0;
+            try
             {
-                if (lines[0] == login && lines[1] == senha)
+                while (x <= linesSize)
                 {
-                    SistemaInterno systema = new SistemaInterno();
-                    return true;
-                }
-                return false;                    
-            }
-            return false;
 
+                    if (!string.IsNullOrEmpty(login) && !string.IsNullOrEmpty(senha))
+                    {
+                        if (lines[x] == login && lines[x + 1] == senha)
+                        {
+                            SistemaInterno systema = new SistemaInterno();
+                            x++;
+                            return true;
+                        }
+                        x++;
+                    }
+                    x++;
+                }
+                return false;
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
         }
         
     }

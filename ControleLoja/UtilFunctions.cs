@@ -14,5 +14,22 @@ namespace ControleLoja
             label.Text = txtBox;
         }
 
+        public static bool CreateUser(TextBox user, TextBox senha, TextBox confirmaSenha, TextBox nomeEmpresa, TextBox token, TextBox caminho)
+        {
+
+            if(senha.Text == confirmaSenha.Text && token.Text == "4883")
+            {
+                System.IO.File.AppendAllText(@"C:\Users\Vinicius\Acessos.txt", user.Text + Environment.NewLine);
+                System.IO.File.AppendAllText(@"C:\Users\Vinicius\Acessos.txt", senha.Text + Environment.NewLine);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+
     }
 }

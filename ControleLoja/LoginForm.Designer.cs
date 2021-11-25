@@ -36,6 +36,7 @@ namespace ControleLoja
             this.Btn_Ok = new System.Windows.Forms.Button();
             this.Btn_Cancel = new System.Windows.Forms.Button();
             this.Pic_Login = new System.Windows.Forms.PictureBox();
+            this.Btn_PrimeiroAcesso = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Login)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@ namespace ControleLoja
             // 
             // Btn_Cancel
             // 
-            this.Btn_Cancel.Location = new System.Drawing.Point(12, 107);
+            this.Btn_Cancel.Location = new System.Drawing.Point(117, 107);
             this.Btn_Cancel.Name = "Btn_Cancel";
             this.Btn_Cancel.Size = new System.Drawing.Size(75, 23);
             this.Btn_Cancel.TabIndex = 6;
@@ -103,11 +104,22 @@ namespace ControleLoja
             this.Pic_Login.TabIndex = 0;
             this.Pic_Login.TabStop = false;
             // 
+            // Btn_PrimeiroAcesso
+            // 
+            this.Btn_PrimeiroAcesso.Location = new System.Drawing.Point(12, 136);
+            this.Btn_PrimeiroAcesso.Name = "Btn_PrimeiroAcesso";
+            this.Btn_PrimeiroAcesso.Size = new System.Drawing.Size(100, 23);
+            this.Btn_PrimeiroAcesso.TabIndex = 7;
+            this.Btn_PrimeiroAcesso.Text = "Primeiro acesso";
+            this.Btn_PrimeiroAcesso.UseVisualStyleBackColor = true;
+            this.Btn_PrimeiroAcesso.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 133);
+            this.ClientSize = new System.Drawing.Size(277, 168);
+            this.Controls.Add(this.Btn_PrimeiroAcesso);
             this.Controls.Add(this.Btn_Cancel);
             this.Controls.Add(this.Btn_Ok);
             this.Controls.Add(this.Txt_Password);
@@ -119,6 +131,7 @@ namespace ControleLoja
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vitoria Jeans - Login";
+            this.Load += new System.EventHandler(this.Frm_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Login)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -134,6 +147,7 @@ namespace ControleLoja
         private System.Windows.Forms.TextBox Txt_Password;
         private System.Windows.Forms.Button Btn_Ok;
         private System.Windows.Forms.Button Btn_Cancel;
+        private System.Windows.Forms.Button Btn_PrimeiroAcesso;
     }
 }
 

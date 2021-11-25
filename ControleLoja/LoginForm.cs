@@ -24,14 +24,17 @@ namespace ControleLoja
 
         private void Btn_Ok_Click(object sender, EventArgs e)
         {
-            if(Login.TryLogin(Txt_Login, Txt_Password))
+            if (Login.TryLogin(Txt_Login, Txt_Password))
             {
                 MessageBox.Show("Login efetuado com sucesso!", "Acesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();
                 SistemaInterno sis = new SistemaInterno();
                 sis.Show();
             }
-            MessageBox.Show("Erro ao tentar acessar o sistema, por favor, verifique seu usuário e senha!", "Acesso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                MessageBox.Show("Erro ao tentar acessar o sistema, por favor, verifique seu usuário e senha!", "Acesso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
 
         }
@@ -39,6 +42,17 @@ namespace ControleLoja
         private void Btn_Cancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Frm_Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CriarUser newUser = new CriarUser();
+            newUser.ShowDialog();
         }
     }
 }
