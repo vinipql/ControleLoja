@@ -11,3 +11,4 @@ C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.
 C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.SistemaInterno.resources
 C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\Database1.mdf
 C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\bin\Debug\Database1_log.ldf
+C:\Users\Vinicius\source\repos\ControleLoja\ControleLoja\obj\Debug\ControleLoja.CriarUser.resources
